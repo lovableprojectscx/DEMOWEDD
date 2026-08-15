@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalia Rodas | Wedding Planner en Chiclayo y Lambayeque</title>
+  <meta name="description" content="Organización integral, coordinación y diseño de bodas de alto impacto en Chiclayo y Lambayeque. Vive una boda inolvidable.">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Natalia Rodas | Wedding Planner en Chiclayo">
+  <meta property="og:description" content="Diseñamos y producimos bodas elegantes y sobrias en Chiclayo y Lambayeque. Que el día de tu boda solo tengas que disfrutar.">
+  <meta property="og:image" content="hero/hero.jpg">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ppt-body">
+
+  <!-- ANIMACIÓN DE ENTRADA (INTRO CURTAIN REVEAL) -->
+  <div class="intro-curtain" id="introCurtain">
+    <div class="curtain-panel curtain-left" id="curtainLeft">
+      <div class="curtain-brand">
+        <span class="curtain-monogram">NR</span>
+        <span class="curtain-logo-name">NATALIA RODAS</span>
+        <span class="curtain-logo-sub">〜 WEDDING PLANNER 〜</span>
+        <div class="curtain-loader-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA DE PROGRESO -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- CURSOR CUSTOM LUXURY -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+  <!-- HEADER / NAVEGACIÓN LIMPIA -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-monogram">NR</span>
+        <div class="brand-text">
+          <span class="brand-name">NATALIA RODAS</span>
+          <span class="brand-sub">〜 WEDDING PLANNER 〜</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#slide-hero" class="nav-link">Inicio</a>
+        <a href="#slide-galeria" class="nav-link">Galería</a>
+        <a href="#slide-servicios" class="nav-link">Servicios</a>
+        <a href="#slide-proceso" class="nav-link">Proceso</a>
+        <a href="#slide-sobre-mi" class="nav-link">Sobre Natalia</a>
+        <a href="#slide-contacto" class="nav-link">Contacto</a>
+      </nav>
+      <a href="https://wa.me/51946315960?text=Hola%20Natalia,%20quisiera%20consultar%20sobre%20la%20organizaci%C3%B3n%20de%20mi%20boda." target="_blank" rel="noopener noreferrer" class="btn btn-outline nav-cta">
+        <span>Planifiquemos tu boda</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- NAVEGADOR DE DIAPOSITIVAS FLOTANTE LATERAL -->
+  <div class="ppt-pagination" id="pptPagination">
+    <div class="ppt-dot active" data-slide="0" data-target="#slide-hero"><span class="dot-tooltip">01 · Inicio</span></div>
+    <div class="ppt-dot" data-slide="1" data-target="#slide-galeria"><span class="dot-tooltip">02 · Portafolio</span></div>
+    <div class="ppt-dot" data-slide="2" data-target="#slide-servicios"><span class="dot-tooltip">03 · Servicios</span></div>
+    <div class="ppt-dot" data-slide="3" data-target="#slide-proceso"><span class="dot-tooltip">04 · Proceso</span></div>
+    <div class="ppt-dot" data-slide="4" data-target="#slide-sobre-mi"><span class="dot-tooltip">05 · Sobre Natalia</span></div>
+    <div class="ppt-dot" data-slide="5" data-target="#slide-testimonios"><span class="dot-tooltip">06 · Testimonios</span></div>
+    <div class="ppt-dot" data-slide="6" data-target="#slide-contacto"><span class="dot-tooltip">07 · Contacto</span></div>
+  </div>
+
+  <!-- BADGE CONTADOR (01 / 07) -->
+  <div class="ppt-counter-badge">
+    <span class="ppt-current" id="pptCurrentNum">01</span> <span class="ppt-separator">/</span> <span class="ppt-total">07</span>
+  </div>
+
+  <!-- MAIN DECK CONTENEDOR SNAP SCROLL -->
+  <main class="ppt-deck-container" id="pptDeck">
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 01 · HERO SHOWCASE VISUAL DE ENTRADA
+         ========================================================================== -->
+    <section class="ppt-slide slide-hero active" id="slide-hero">
+      
+      <div class="hero-bg-carousel">
+        <div class="bg-photo active" style="background-image: url('hero/hero.jpg');"></div>
+        <div class="bg-photo" style="background-image: url('galeria/galeria_05.jpg');"></div>
+        <div class="bg-photo" style="background-image: url('galeria/galeria_08.jpg');"></div>
+        <div class="bg-photo" style="background-image: url('servicios/servicio_01.jpg');"></div>
+        <div class="hero-vignette-overlay"></div>
+      </div>
+
+      <div class="container hero-slide-content text-center">
+        <span class="hero-tagline reveal-on-scroll delay-1">WEDDING PLANNING & EVENT DESIGN</span>
+        <h1 class="hero-title reveal-on-scroll delay-2">Que el día de tu boda<br>solo tengas que disfrutar</h1>
+        <p class="hero-subtitle reveal-on-scroll delay-3">Organización y producción de bodas de alto impacto en Chiclayo y todo Lambayeque</p>
+        
+        <div class="hero-cta-wrapper reveal-on-scroll delay-4">
+          <a href="https://wa.me/51946315960?text=Hola%20Natalia,%20quisiera%20consultar%20sobre%20la%20organizaci%C3%B3n%20de%20mi%20boda." target="_blank" rel="noopener noreferrer" class="btn btn-luxury-whatsapp">
+            <svg class="wa-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>CONVERSEMOS POR WHATSAPP</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="slide-scroll-hint" onclick="document.querySelector('#slide-galeria').scrollIntoView({behavior: 'smooth'})">
+        <span class="hint-text">DESLIZA PARA EXPLORAR</span>
+        <div class="hint-line"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 02 · GALERÍA DE LUJO FILMSTRIP
+         ========================================================================== -->
+    <section class="ppt-slide slide-galeria" id="slide-galeria">
+      <div class="container slide-header text-center">
+        <span class="section-tag reveal-on-scroll">NUESTRO PORTAFOLIO</span>
+        <h2 class="section-title reveal-on-scroll delay-1">Momentos Inolvidables</h2>
+        <div class="sage-accent-line reveal-scale delay-2"></div>
+      </div>
+
+      <div class="filmstrip-container reveal-on-scroll delay-3">
+        <div class="filmstrip-track" id="filmstripTrack">
+          
+          <div class="filmstrip-card" data-src="galeria/galeria_01.jpg" data-caption="Preparativos · Novia en bata blanca">
+            <img src="galeria/galeria_01.jpg" alt="Novia preparativos" loading="lazy">
+            <div class="card-tag">PREPARATIVOS</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_02.jpg" data-caption="Preparativos · Retrato B&N tiara">
+            <img src="galeria/galeria_02.jpg" alt="Retrato novia perfil" loading="lazy">
+            <div class="card-tag">B&N EDITORIAL</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_03.jpg" data-caption="Preparativos · Novia en sillón clásico">
+            <img src="galeria/galeria_03.jpg" alt="Novia sillón bouquet" loading="lazy">
+            <div class="card-tag">PREPARATIVOS</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_04.jpg" data-caption="Ceremonia · Iglesia ante el altar">
+            <img src="galeria/galeria_04.jpg" alt="Iglesia altar" loading="lazy">
+            <div class="card-tag">CEREMONIA</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_05.jpg" data-caption="Ceremonia · Jardín y velo al viento">
+            <img src="galeria/galeria_05.jpg" alt="Ceremonia jardín velo" loading="lazy">
+            <div class="card-tag">CEREMONIA</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_06.jpg" data-caption="Detalles · Encaje de vestido con manos B&N">
+            <img src="galeria/galeria_06.jpg" alt="Encaje vestido" loading="lazy">
+            <div class="card-tag">DETALLES</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_07.jpg" data-caption="Detalles · Candelabros y mesa 9">
+            <img src="galeria/galeria_07.jpg" alt="Detalle mesa candelabros" loading="lazy">
+            <div class="card-tag">DETALLES</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_08.jpg" data-caption="Recepción · Hora dorada">
+            <img src="galeria/galeria_08.jpg" alt="Hora dorada recepción" loading="lazy">
+            <div class="card-tag">RECEPCIÓN</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_09.jpg" data-caption="Exteriores · Arco floral jardín">
+            <img src="galeria/galeria_09.jpg" alt="Arco floral" loading="lazy">
+            <div class="card-tag">EXTERIORES</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_10.jpg" data-caption="Exteriores · Jardín B&N Chiclayo">
+            <img src="galeria/galeria_10.jpg" alt="Pareja B&N jardín" loading="lazy">
+            <div class="card-tag">EXTERIORES</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_11.jpg" data-caption="Exteriores · Arco de Monsefú B&N">
+            <img src="galeria/galeria_11.jpg" alt="Pareja Monsefú" loading="lazy">
+            <div class="card-tag">EXTERIORES</div>
+          </div>
+
+          <div class="filmstrip-card" data-src="galeria/galeria_12.jpg" data-caption="Decoración · Salón de recepción chandeliers">
+            <img src="galeria/galeria_12.jpg" alt="Salón chandeliers" loading="lazy">
+            <div class="card-tag">AMBIENTACIÓN</div>
+          </div>
+
+        </div>
+
+        <div class="filmstrip-controls">
+          <button class="film-btn" id="filmPrev" aria-label="Anterior">‹</button>
+          <span class="film-hint">Arrastra o usa las flechas</span>
+          <button class="film-btn" id="filmNext" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 03 · NUESTROS SERVICIOS
+         ========================================================================== -->
+    <section class="ppt-slide slide-servicios" id="slide-servicios">
+      <div class="container">
+        <div class="slide-header text-center">
+          <span class="section-tag reveal-on-scroll">LO QUE HACEMOS</span>
+          <h2 class="section-title reveal-on-scroll delay-1">Servicios a tu Medida</h2>
+          <div class="sage-accent-line reveal-scale delay-2"></div>
+        </div>
+
+        <div class="services-ppt-grid">
+          
+          <div class="service-ppt-card reveal-on-scroll delay-1">
+            <div class="svc-num">01</div>
+            <div class="svc-img-holder">
+              <img src="servicios/servicio_01.jpg" alt="Organización integral">
+            </div>
+            <h3 class="svc-title">Organización Integral</h3>
+            <p class="svc-desc">Gestión completa de proveedores, cronograma, presupuesto y diseño de concepto de inicio a fin.</p>
+          </div>
+
+          <div class="service-ppt-card reveal-on-scroll delay-2">
+            <div class="svc-num">02</div>
+            <div class="svc-img-holder">
+              <img src="servicios/servicio_02.jpg" alt="Coordinación del día">
+            </div>
+            <h3 class="svc-title">Coordinación del Día</h3>
+            <p class="svc-desc">Supervisión en tiempo real de cada momento para que tú solo disfrutes sin preocupaciones.</p>
+          </div>
+
+          <div class="service-ppt-card reveal-on-scroll delay-3">
+            <div class="svc-num">03</div>
+            <div class="svc-img-holder">
+              <img src="servicios/servicio_03.jpg" alt="Decoración y ambientación">
+            </div>
+            <h3 class="svc-title">Decoración & Ambientación</h3>
+            <p class="svc-desc">Diseño estético de espacios con flores, luces y detalles que reflejan la personalidad de la pareja.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 04 · EL PROCESO
+         ========================================================================== -->
+    <section class="ppt-slide slide-proceso" id="slide-proceso">
+      <div class="container">
+        <div class="slide-header text-center">
+          <span class="section-tag reveal-on-scroll">PASO A PASO</span>
+          <h2 class="section-title reveal-on-scroll delay-1">El Camino al Día Perfecto</h2>
+          <div class="sage-accent-line reveal-scale delay-2"></div>
+        </div>
+
+        <div class="process-ppt-timeline">
+          <div class="timeline-step reveal-on-scroll delay-1">
+            <span class="t-num">01</span>
+            <h3 class="t-title">Conversamos</h3>
+            <p class="t-desc">Entendemos tus deseos, visión y presupuesto estimado.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll delay-2">
+            <span class="t-num">02</span>
+            <h3 class="t-title">Diseñamos</h3>
+            <p class="t-desc">Creamos la propuesta con proveedores clave y concepto visual.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll delay-3">
+            <span class="t-num">03</span>
+            <h3 class="t-title">Organizamos</h3>
+            <p class="t-desc">Coordinamos la logística y pruebas mientras tú estás tranquila.</p>
+          </div>
+
+          <div class="timeline-step reveal-on-scroll delay-4">
+            <span class="t-num">04</span>
+            <h3 class="t-title">Disfrutas</h3>
+            <p class="t-desc">El gran día se ejecuta con precisión absoluta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 05 · SOBRE NATALIA
+         ========================================================================== -->
+    <section class="ppt-slide slide-sobre-mi" id="slide-sobre-mi">
+      <div class="container">
+        <div class="about-ppt-grid">
+          
+          <div class="about-ppt-img-col reveal-left">
+            <div class="about-ppt-frame">
+              <img src="perfil/perfil.jpg" alt="Natalia Rodas Wedding Planner">
+            </div>
+          </div>
+
+          <div class="about-ppt-text-col reveal-right">
+            <span class="section-tag">SOBRE NATALIA</span>
+            <h2 class="about-title">Producción de Bodas con Sensibilidad & Rigor</h2>
+            <div class="sage-accent-line left-aligned"></div>
+
+            <p class="about-paragraph">
+              Hola, soy Natalia Rodas. Me dedico a diseñar y producir bodas inolvidables en Chiclayo y Lambayeque. Mi filosofía se basa en cuidar cada detalle logístico y estético para que vivas una celebración serena y libre de estrés.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="as-item">
+                <span class="as-num">50+</span>
+                <span class="as-txt">Bodas</span>
+              </div>
+              <div class="as-item">
+                <span class="as-num">7+</span>
+                <span class="as-txt">Años</span>
+              </div>
+              <div class="as-item">
+                <span class="as-num">80+</span>
+                <span class="as-txt">Parejas</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 06 · TESTIMONIOS
+         ========================================================================== -->
+    <section class="ppt-slide slide-testimonios" id="slide-testimonios">
+      <div class="container text-center">
+        <div class="slide-header text-center">
+          <span class="section-tag reveal-on-scroll">TESTIMONIOS</span>
+          <h2 class="section-title reveal-on-scroll delay-1">Historias de Nuestras Parejas</h2>
+          <div class="sage-accent-line reveal-scale delay-2"></div>
+        </div>
+
+        <div class="testimonial-ppt-wrapper reveal-scale delay-3">
+          <div class="t-quote">“</div>
+          <p class="t-text" id="pptQuoteText">"Natalia hizo que la planificación de nuestra boda fuera una experiencia impecable y sin estrés. El día del evento todo fluyó con una precisión perfecta."</p>
+          <div class="t-author" id="pptQuoteAuthor">Camila & Mateo — Boda en Chiclayo</div>
+
+          <div class="t-controls">
+            <button class="t-btn" id="tPrev">‹</button>
+            <button class="t-btn" id="tNext">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIAPOSITIVA 07 · CONTACTO
+         ========================================================================== -->
+    <section class="ppt-slide slide-contacto" id="slide-contacto">
+      <div class="container text-center closing-container">
+        <span class="closing-tag reveal-on-scroll">COMENZAMOS EL VIAJE</span>
+        <h2 class="closing-title reveal-on-scroll delay-1">Cuéntanos cómo imaginas tu boda</h2>
+        <p class="closing-subtitle reveal-on-scroll delay-2">Estamos listos para hacer realidad la celebración que sueñas en Chiclayo y Lambayeque</p>
+        
+        <div class="reveal-scale delay-3">
+          <a href="https://wa.me/51946315960?text=Hola%20Natalia,%20quiero%20contarte%20c%C3%B3mo%20imagino%20mi%20boda." target="_blank" rel="noopener noreferrer" class="btn btn-luxury-whatsapp">
+            <svg class="wa-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>CONVERSEMOS POR WHATSAPP</span>
+          </a>
+        </div>
+
+        <div class="closing-footer-block reveal-on-scroll delay-4">
+          <div class="footer-monogram">NR</div>
+          <div class="footer-name">NATALIA RODAS</div>
+          <div class="footer-sub">〜 WEDDING PLANNER · CHICLAYO, PERÚ 〜</div>
+          <div class="footer-copy">&copy; 2026 Natalia Rodas. Todos los derechos reservados. | Tel: +51 946 315 960</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/51946315960?text=Hola%20Natalia,%20quisiera%20consultar%20sobre%20la%20organizaci%C3%B3n%20de%20mi%20boda." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Escríbenos por WhatsApp">
+    <div class="whatsapp-float-content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="whatsapp-tooltip">¿Conversamos?</span>
+    </div>
+  </a>
+
+  <!-- MODAL LIGHTBOX PARA LA GALERÍA -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">&times;</button>
+      <div class="lightbox-media">
+        <img src="" alt="" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
