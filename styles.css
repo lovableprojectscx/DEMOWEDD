@@ -1,7 +1,7 @@
 /* ==========================================================================
    NATALIA RODAS | WEDDING PLANNER
-   Estilo Visual: Presentation Deck Fluid & Scroll Reveal Animations
-   - Botón de WhatsApp Editorial de 1 sola Línea (Encaje Perfecto en Móvil y PC)
+   Estilo Visual: Presentation Deck Fluid & Visual Value Showcase
+   - Tarjetas Fotográficas de Alto Impacto (Slide 04: Tu Boda en Manos Expertas)
    - Paleta de Marca Oficial: Sand Beige (#EDE6D8) + Sage Green (#8B9E87)
    ========================================================================== */
 
@@ -924,64 +924,95 @@ h1, h2, h3, h4, .section-title, .about-title, .closing-title {
 }
 
 /* --------------------------------------------------
-   DIAPOSITIVA 04 · EL PROCESO
+   DIAPOSITIVA 04 · POR QUÉ ELEGIRNOS (SHOWCASE DE LUJO FOTOGRÁFICO)
    -------------------------------------------------- */
-.slide-proceso {
+.slide-garantia {
   background-color: var(--bg-primary);
 }
 
-.process-ppt-timeline {
+.value-cards-showcase {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.8rem;
-  margin-top: 3.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+  margin-top: 2.5rem;
 }
 
-.timeline-step {
-  background-color: var(--bg-card);
-  padding: 2.2rem 1.6rem;
-  border-radius: 3px;
+.value-photo-card {
+  position: relative;
+  height: 420px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
   border: 1px solid var(--border-light);
-  text-align: center;
-  transition: var(--transition-smooth);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+  cursor: pointer;
 }
 
-.timeline-step:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent-sage-hover);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+.value-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(28, 30, 27, 0.2) 0%, rgba(28, 30, 27, 0.88) 100%);
+  transition: opacity 0.4s ease;
 }
 
-.t-num {
+.value-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.2rem 1.8rem;
+  color: #FFFFFF;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.value-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--accent-sage-light);
+  text-transform: uppercase;
+}
+
+.value-title {
   font-family: var(--font-serif);
-  font-size: 3.2rem;
-  color: var(--accent-sage-hover);
-  line-height: 1;
-  display: block;
-  margin-bottom: 0.8rem;
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-.t-title {
-  font-size: 1.45rem;
-  margin-bottom: 0.6rem;
-}
-
-.t-desc {
+.value-desc {
   font-size: 0.92rem;
-  color: var(--text-muted);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}
+
+.value-photo-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.24);
+  border-color: var(--accent-sage-hover);
+}
+
+.value-photo-card:hover .value-card-overlay {
+  background: linear-gradient(180deg, rgba(28, 30, 27, 0.1) 0%, rgba(28, 30, 27, 0.94) 100%);
 }
 
 @media (max-width: 992px) {
-  .process-ppt-timeline {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .process-ppt-timeline {
+  .value-cards-showcase {
     grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  .value-photo-card {
+    height: 320px;
   }
 }
 
